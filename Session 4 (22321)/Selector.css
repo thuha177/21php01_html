@@ -1,0 +1,30 @@
+h1 {
+    color: red;
+}
+p {
+    color: green;
+}
+h2 {
+    color: gray;
+}
+.my-name {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+#shop {
+    color: black;
+    font-size: 30px;
+}
+.my-profile .my-name {
+    color: green;
+    font-size: 35px;
+}
+/*style cho cung 1 class my name , phai co .cha space .con*/
+.text-1 .text-2 {
+    font-size: 35px; !important;
+}
+/* set cho 2 text khong cung 1 group co font size giong nhau*/
+.text-1 {
+    font-size: 70px;
+}

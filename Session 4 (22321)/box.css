@@ -1,0 +1,15 @@
+.box {
+    border: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box1 {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    border:dashed ;
+}
+.box2 {
+    margin-top: 1px;
+    margin-bottom: 2px;
+    border: dashed;
+}
