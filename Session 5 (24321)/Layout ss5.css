@@ -1,0 +1,29 @@
+header {
+    height: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    text-align: center;
+}
+nav {
+    height: 10%;
+    text-align: center;
+}
+section {
+    height: 60%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.Index {
+    height: auto;
+    width: 40px;
+    float: left;
+    border-right: 1px solid black;
+}
+.Content {
+    text-align: center;
+
+}
+footer {
+    text-align: center;
+    height: 10%;
+}
