@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>convert_form_to_HTML</title>
+    <link rel="stylesheet" href="convert_form_to_HTML.css">
+</head>
+<body>
+    <header>
+        <div class="mn1">
+        <a href="#"> Quản lý hàng hóa</a> / <a href="#">Thêm mới Hàng hóa</a>
+        </div>
+        <div class="mn2">
+            <button type="button">⇦ | Quay lại</button>
+            <button class="button_head" type="button">Lưu & Thêm mới</button>
+        </div>
+
+    </header>
+    <section>
+    <p class="table_name">Thông tin cơ bản</p>
+    <form name="basic infor" action="#" method="POST" target="_blank">
+
+        <p>Loại sản phẩm
+            <select class="size">
+                <option>Dịch vụ</option>
+                <option>Thương mại</option>
+                <option>Công nghiệp</option>
+                <option>Bán tự động</option>
+            </select></p>
+
+        <p>Mã Dịch vụ (SKU)
+            <input class="size" type="text" placeholder="Mã hàng hóa tự động" name="mã dịch vụ (sku)"></p>
+
+        <p>Mã vạch
+            <input class="size" type="text" placeholder="Mã vạch sản phẩm" name="mã vạch"></p>
+
+        <p>Tên Dịch Vụ (<span>*</span>)
+            <input class="size" type="text" name="tên dịch vụ">
+        </p>
+
+        <p>Nhóm dịch vụ
+            <input class="size" type="text" placeholder="Chọn hoặc nhập tên nhóm hàng hóa" name="nhóm dịch vụ" list="hàng hóa">
+            <datalist id="hàng hóa">
+                <option value="vui chơi">vui chơi</option>
+                <option value="nghỉ dưỡng">nghỉ dưỡng</option>
+            </datalist>
+        </p>
+
+        <p>Giá bán (<span>*</span>)
+            <input class="size" type="text" name="giá bán">
+        </p>
+
+        <p>Quản lý theo Serial/IMEI
+            <input class="size" type="checkbox" name="quản lý theo serial/imei">
+        </p>
+    </form>
+    </section>
+
+<footer>
+    <div class="table_name">
+    Ảnh hàng hóa
+    </div>
+    <div>
+        <button type="button">Thêm ảnh</button>
+    </div>
+</footer>
+</body>
+</html>

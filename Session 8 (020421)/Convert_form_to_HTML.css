@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 50px;
+}
+header {
+    background-color: lightgrey;
+    height: 30px;
+    padding: 0 10px 10px 10px;
+    color: grey;
+}
+.mn1 {
+    width: 50%;
+    float: left;
+}
+.mn2 {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+header .button_head {
+    background-color: #337aff;
+    color: white;
+}
+button {
+    font-weight: bold;
+}
+a:hover {
+    color: black;
+}
+section {
+    border: 1px solid lightgrey;
+    margin: 10px;
+    clear: left;
+}
+
+form {
+    padding-left: 30px;
+    clear: left;
+}
+
+input, select {
+    margin-top: 15px;
+    margin-right: 300px;
+   height: 30px;
+    width: 50%;
+    float: right;
+}
+span {
+    color: red;
+}
+
+footer {
+    border: 1px solid lightgrey;
+    margin: 10px;
+    height: 100px;
+}
+.table_name {
+    background-color: lightgrey;
+    height: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+footer button {
+    margin:15px ;
+    float: right;
+    background-color: #337aff;
+    color: white;
+}

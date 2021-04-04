@@ -30,7 +30,7 @@
     border-radius: 5px;
 }
 .banner {
-    width: 96%;
+    clear: both;
     height: 180px;
     background-color: cornflowerblue;
     text-align: right;
@@ -85,7 +85,7 @@
     padding-top: 20px;
 }
 .footer {
-    width: 97.3%;
+    clear: both;
     height: 50px;
     background-color: cornflowerblue;
     text-align: center;
@@ -129,7 +129,7 @@
         border-radius: 5px;
     }
     .banner {
-        width: 96%;
+        clear: both;
         height: 180px;
         background-color: cornflowerblue;
         text-align: right;
@@ -184,7 +184,7 @@
         padding-top: 20px;
     }
     .footer {
-        width: 97.3%;
+        clear: both;
         height: 50px;
         background-color: cornflowerblue;
         text-align: center;
@@ -228,6 +228,7 @@
         border-radius: 5px;
     }
     .banner {
+        clear: both;
         height: 180px;
         background-color: cornflowerblue;
         text-align: right;
@@ -274,6 +275,7 @@
         border: 2px solid white;
     }
     .footer {
+        clear: both;
         height: 50px;
         background-color: cornflowerblue;
         text-align: center;
@@ -312,7 +314,7 @@
     }
     .banner {
         height: 100px;
-        width: 100%;
+        clear: both;
         background-color: cornflowerblue;
         text-align: left;
         border-radius: 15px;
@@ -353,6 +355,7 @@
         border: 2px solid white;
     }
     .footer {
+        clear: both;
         height: 20px;
         background-color: cornflowerblue;
         text-align: center;

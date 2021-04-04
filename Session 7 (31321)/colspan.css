@@ -1,0 +1,25 @@
+.my-table {
+    overflow-x: scroll;
+}
+table {
+    border-collapse: collapse;
+    width: 2000px;
+}
+table, tr, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+thead {
+    font-weight: bold;
+}
+.row {
+    color: red;
+    font-weight: bold;
+    empty-cells: show;
+}
+.row2 {
+    background-color: yellow;
+}
+td:nth-child(1) {
+    color: blue;
+

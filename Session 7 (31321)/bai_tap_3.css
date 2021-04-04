@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid red;
+    line-height: 50px;
+}
+h2 {
+    text-align: center;
+    color: blue;
+    text-decoration-line: underline;
+}
+form {
+     border: 2px dashed black;
+     padding: 10px 20px;
+     color: white;
+     font-weight: bold;
+     background-image: linear-gradient(#03a9f4
+     , violet, pink);
+ }
+p {font-weight: bold;}
+.size {
+    height: 30px;
+    width: 300px;
+}
+.size1 {
+    height: 150px;
+    width: 50%;
+}
+.size2 {
+    height: 30px;
+    width: 300px;
+    word-wrap: break-word;
+}
+.format {
+    float: left;
+}
+.row {
+    clear: left;
+}
+#width-p {
+    width: 200px;
+}
+p#width514 {
+    width: 514px;
+    line-height: 30px;
+}
+div#submit.row {
+    border: 1px solid red;
+    height: 50px;
+    padding: 0 246px;
+}
+input#sub {
+    margin: 10px auto;
+    height: 30px;
+    width: 100px;
+}
+p#sub1.format {
+    margin-right: 20px;
+}
