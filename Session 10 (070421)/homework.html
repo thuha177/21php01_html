@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript_homework</title>
+</head>
+<body>
+    <script>
+        var to1 = 12;
+        var to2;
+        to2 = to1 * 2 - 4;
+        document.write("Bài tập 1 <br>");
+        document.write("Tổ hai có " + to2 + " nhân viên <br>"  );
+    </script>
+    <script>
+        var candy = 0;
+        var candyShell = 0;
+        var money = 2000;
+        var price = 200;
+        candy = money / price;
+        candyShell = candy;
+        while (candyShell >= 2) {
+            candyShell = candyShell-2;
+            candy++;
+            candyShell++;
+        }
+        document.write("Bài tập 2 <br>");
+        document.write("Số kẹo mua được là " + candy + " cái kẹo <br>");
+    </script>
+    <script>
+        var tui1 = 18;
+        var tui2 = tui1 * 2;
+        var soBiCanChuyen;
+        soBiCanChuyen = ( tui2 - tui1 ) / 2;
+        document.write("Bài tập 3 <br>");
+        document.write("Số bi cần chuyển là " + soBiCanChuyen + " viên bi. <br>")
+    </script>
+    <script>
+        var sachCuaBinh = 27;
+        var sachCuaMinh = sachCuaBinh / 3;
+        var soSachCanCho;
+        soSachCanCho = ( sachCuaBinh + sachCuaMinh ) / 3 - sachCuaMinh;
+        document.write("Bài tập 4 <br>");
+        document.write("Số sách cần cho là " + soSachCanCho + " quyển sách. <br>")
+    </script>
+    <script>
+        var a1 = 2/5;
+        var b1 = 3/4;
+        var c1 = 27;
+        var a2 = 1;
+        var b2 = 1;
+        var c2 = 50;
+
+        var D = a1 * b2 - a2 * b1;
+        var Dx = c1 * b2 - c2 * b1;
+        var Dy = a1 * c2 - a2 * c1;
+
+        var x = Dx / D;
+        var y = Dy / D;
+
+        document.write("Bài tập 5 <br>");
+        document.write("Số bi xanh là " + parseInt(x) + " và số bi đỏ là "+  y)
+    </script>
+
+
+</body>
+</html>
