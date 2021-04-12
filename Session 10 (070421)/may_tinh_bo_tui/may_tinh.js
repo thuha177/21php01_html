@@ -29,11 +29,11 @@ function Dinh_dang_chuoi(so) {
 
 function Xoa_Dinh_dang_chuoi(so) {
     return Number(so.replace(/,/g, ''))
-} 
+}
 
 
 var he_thong = document.getElementsByClassName('he_thong');
-for(var i=0; i < he_thong.length; i++) {
+for(var i =0; i < he_thong.length; i++) {
     he_thong[i].addEventListener('click', function() {
         if(this.id == "xoa_tat_ca") {
             In_Ket_qua("");
@@ -58,7 +58,7 @@ for(var i=0; i < he_thong.length; i++) {
                     In_gia_tri_cu("")
                 } else {
                     ket_qua_cu = ket_qua_cu + this.id;
-                    In_gia_tri_cu(ket_qua_cu)
+                    In_gia_tri_cu(ket_qua_cu);
                     In_Ket_qua("")
                 }
             }
@@ -69,7 +69,7 @@ for(var i=0; i < he_thong.length; i++) {
 var con_so = document.getElementsByClassName('con_so');
 for(var i=0; i < con_so.length; i++) {
     con_so[i].addEventListener('click', function() {
-        var ket_qua = Xoa_Dinh_dang_chuoi(Lay_ket_qua())
+        var ket_qua = Xoa_Dinh_dang_chuoi(Lay_ket_qua());
         if(ket_qua != NaN) {
             ket_qua = ket_qua + this.id;
             In_Ket_qua(ket_qua)
