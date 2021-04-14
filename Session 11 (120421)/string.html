@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        var fullName = "Nguyen Thi Thu Ha";
+
+        var firstSpace = fullName.indexOf(' ');
+        var firstName = fullName.substring(0, firstSpace);
+        document.write("<br> First Name: ");
+        document.write(firstName);
+
+        var count = firstName.length;
+        document.write("<br> First Name leng: ");
+        document.write(count);
+
+        var lastSpace = fullName.lastIndexOf(' ');
+        var lastName = fullName.substring(lastSpace,fullName.length);
+        document.write("<br> Last Name: ");
+        document.write(lastName);
+
+        var count = lastName.length;
+        document.write("<br> Last Name leng: ");
+        document.write(count);
+
+        var MiddleName = fullName.substring(firstSpace,lastSpace);
+        document.write("<br> Middle Name: ");
+        document.write(MiddleName);
+
+        var count = MiddleName.length;
+        document.write("<br> Middle Name leng: ");
+        document.write(count);
+
+    </script>
+
+
+
+<!--    Bài tập String trong javascript:-->
+<!--    Khai báo 1 biến chứa họ và tên đầy đủ, ví dụ: "Tran Van Tuan"-->
+<!--    Đếm xem họ có bao nhiêu ký tự, tên đệm có bao nhiêu ký tự, tên có bao nhiêu ký tự-->
+<!--    Thay thế tên bằng chữ "21PHP01"-->
+<!--    Đếm xem có bao nhiêu chữ "n" trong họ và tên-->
+<!--    -->
+<!--    In ra và bôi màu vàng các chữ cái a, n, t trong họ và tên-->
+</body>
+</html>
