@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array_homework</title>
+</head>
+<body>
+<script>
+
+
+    var studentList = [];
+
+        var student1 = {
+            "fullname": "Nguyen Van A ",
+            "age": 19,
+            "email": "nam@yahoo.com",
+            "address": "Ha Noi"
+        };
+
+        var student2 = {
+            "fullname": "Nguyen Van B ",
+            "age": 19,
+            "email": "nam@yahoo.com",
+            "address": "Ha Noi"
+        };
+
+        var student3 = {
+            "fullname": "Nguyen Van C ",
+            "age": 25,
+            "email": "nam@yahoo.com",
+            "address": "Ha Noi"
+        };
+
+        var student4 = {
+            "fullname": "Nguyen Van D ",
+            "age": 24,
+            "email": "nam@yahoo.com",
+            "address": "Ha Noi"
+        };
+
+    studentList.push(student1, student2, student3, student4);
+
+    for (var i = 0; i < studentList.length; i++) {
+        document.write(" Họ Tên: " + studentList[i].fullname + ", ");
+        document.write(" Tuổi: " + studentList[i].age + ", ");
+        document.write(" Email: " + studentList[i].email + ", ");
+        document.write("Địa chỉ: " + studentList[i].address);
+        document.write("<br>");
+    }
+
+    var student5 = {
+        "fullname": "Huy",
+        "age": 19,
+        "email": "nam@yahoo.com",
+        "address": "Ha Noi"
+    };
+
+    var student6 = {
+        "fullname": "Nguyen Van De ",
+        "age": 19,
+        "email": "nam@yahoo.com",
+        "address": "Da Nang"
+    };
+
+    studentList.push(student5, student6);
+
+    document.write("Danh sach sau khi them 2 student <br>");
+
+    for ( var j = 0; j < studentList.length; j++ ){
+        document.write(" Họ Tên: " + studentList[j].fullname + ", ");
+        document.write(" Tuổi: " + studentList[j].age + ", ");
+        document.write(" Email: " + studentList[j].email + ", ");
+        document.write("Địa chỉ: " + studentList[j].address);
+        document.write("<br>");
+    }
+document.write("Doi ten Huy thanh Hung <br>");
+
+    for ( var k = 0; k < studentList.length; k++ ){
+       if (studentList[k].fullname === "Huy"){
+           studentList[k].fullname = "Hung"
+       }
+    }
+
+    for ( var m = 0; m < studentList.length; m++ ){
+        document.write(" Họ Tên: " + studentList[m].fullname + ", ");
+        document.write(" Tuổi: " + studentList[m].age + ", ");
+        document.write(" Email: " + studentList[m].email + ", ");
+        document.write("Địa chỉ: " + studentList[m].address);
+        document.write("<br>");
+    }
+document.write("Đổi quê quán học viên quê quán ở Đà Nẵng thành quê quán Hải Phòng và in ra danh sách lớp mới <br>");
+    for ( var b = 0; b < studentList.length; b++){
+        if (studentList[b].address === "Da Nang"){
+            studentList[b].address = "Hai Phong"
+        }
+    }
+    for ( var c = 0;  c < studentList.length; c++ ) {
+        document.write(" Họ Tên: " + studentList[c].fullname + ", ");
+        document.write(" Tuổi: " + studentList[c].age + ", ");
+        document.write(" Email: " + studentList[c].email + ", ");
+        document.write("Địa chỉ: " + studentList[c].address);
+        document.write("<br>");
+    }
+document.write("Xoa hoc vien 23-26 <br>");
+    for(var g = 0; g < studentList.length; g++){
+        if (studentList[g].age ){
+            studentList[g] = null;
+        }
+    }
+
+    for ( var s = 0;  s< studentList.length; s++ ) {
+        document.write(" Họ Tên: " + studentList[s].fullname + ", ");
+        document.write(" Tuổi: " + studentList[s].age + ", ");
+        document.write(" Email: " + studentList[s].email + ", ");
+        document.write("Địa chỉ: " + studentList[s].address);
+        document.write("<br>");
+    }
+
+</script>
+
+<!--BTVN: (nhẹ nhàng như yêu cầu)-->
+<!--1. Khởi tạo danh sách gồm 4 học viên của lớp gồm họ và tên, tuổi, email, quê quán-->
+<!--2. In danh sách thông tin học viên ra-->
+<!--3. Thêm thông tin 2 học viên mới và in ra danh sách lớp-->
+<!--4. Đổi tên học viên có tên Huy thành Hùng và in ra danh sách lớp mới-->
+<!--5. Đổi quê quán học viên quê quán ở Đà Nẵng hoặc xài gmail thành quê quán Hải Phòng và in ra danh sách lớp mới-->
+<!--6. Bỏ học viên tuổi  từ 23-26 ra khỏi danh sách lớp học và in ra danh sách lớp mới-->
+</body>
+</html>
