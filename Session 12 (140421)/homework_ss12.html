@@ -49,7 +49,7 @@
     }
 
     var student5 = {
-        "fullname": "Huy",
+        "fullname": "Nguyen Viet Huy",
         "age": 19,
         "email": "nam@yahoo.com",
         "address": "Ha Noi"
@@ -64,7 +64,7 @@
 
     studentList.push(student5, student6);
 
-    document.write("Danh sach sau khi them 2 student <br>");
+    document.write("<b>Danh sách sau khi thêm 2 students</b> <br>");
 
     for ( var j = 0; j < studentList.length; j++ ){
         document.write(" Họ Tên: " + studentList[j].fullname + ", ");
@@ -73,11 +73,11 @@
         document.write("Địa chỉ: " + studentList[j].address);
         document.write("<br>");
     }
-document.write("Doi ten Huy thanh Hung <br>");
+document.write("<b>Đổi tên Huy thành Hùng</b> <br>");
 
     for ( var k = 0; k < studentList.length; k++ ){
-       if (studentList[k].fullname === "Huy"){
-           studentList[k].fullname = "Hung"
+       if (studentList[k].fullname === "Nguyen Viet Huy"){
+           studentList[k].fullname = "Nguyen Van Hung"
        }
     }
 
@@ -88,7 +88,7 @@ document.write("Doi ten Huy thanh Hung <br>");
         document.write("Địa chỉ: " + studentList[m].address);
         document.write("<br>");
     }
-document.write("Đổi quê quán học viên quê quán ở Đà Nẵng thành quê quán Hải Phòng và in ra danh sách lớp mới <br>");
+document.write("<b>Đổi quê quán học viên quê quán ở Đà Nẵng thành quê quán Hải Phòng và in ra danh sách lớp mới</b> <br>");
     for ( var b = 0; b < studentList.length; b++){
         if (studentList[b].address === "Da Nang"){
             studentList[b].address = "Hai Phong"
@@ -101,7 +101,7 @@ document.write("Đổi quê quán học viên quê quán ở Đà Nẵng thành 
         document.write("Địa chỉ: " + studentList[c].address);
         document.write("<br>");
     }
-document.write("Xoa hoc vien 23-26 <br>");
+document.write("<b>Xoa hoc vien 23-26</b> <br>");
     for(var g = 0; g < studentList.length; g++){
         if (studentList[g].age ){
             studentList[g] = null;
