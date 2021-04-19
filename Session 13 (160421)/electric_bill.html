@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>electric_bill</title>
+    <link rel="stylesheet" href="electric_bill.css">
+</head>
+<body>
+<form name="electic_bill" onsubmit="return validate()" method="post">
+
+    <p>Họ tên</p>
+    <input type="text" id="name" value="" required/>
+
+
+    <p>Số đầu kỳ</p>
+    <input name="dauKy" type="text" id="bmonth" required/>
+    <p>Số cuối kỳ</p>
+    <input name="cuoiKy" type="text" id="emonth" required/>
+
+
+    <p>Giới tính</p>
+    <input type="radio" id="male" name="gender" value="male" required/>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required/>
+    <label for="male">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required/>
+    <label for="other">Other</label>
+
+
+    <p>Ngày sinh</p>
+    <input type="date" id="bday" name="bday" required/>
+
+
+    <p>Ngày đầu kỳ</p>
+    <input type="date" id="sday" name="bday" required/>
+    <p>Ngày cuối kỳ</p>
+    <input type="date" id="eday" name="eday" required/>
+
+    <br><br><br>
+    <input class="submit" type="submit" value="Submit">
+</form>
+
+<!--Tạo form nhập tính tiền điện gồm:-->
+<!--Họ tên khách hàng (text)-->
+<!--, số đầu kỳ (text)-->
+<!--, số cuối kỳ (text)-->
+<!--, giới tính (radio)-->
+<!--, ngày sinh (date)-->
+<!--, ngày đầu kỳ (date)-->
+<!--, ngày cuối kỳ (date)-->
+<!--1. Tất cả các trường k được để trống-->
+<!--2. Số đầu kỳ phải nhỏ hơn hoặc bằng số cuối kỳ, số đầu kỳ phải lớn hơn 0, ngày đầu kỳ nhỏ hơn hoặc bằng ngày cuối kỳ-->
+<!--3. Tính tiền điện: 50 số đầu giá 1000 VND/số, 100 số tiếp theo 2000 VND/số, từ 200 số trở lên sẽ tính giá 3500 VND/số-->
+<!--4. In ra cái hóa đơn đẹp đẹp cho khách hàng (Nếu khách hàng là nữ thì in hóa đơn màu hồng, là nam thì in ra màu xanh green)-->
+
+<script>
+    function validate() {
+        var name = document.getElementById("name");
+        var bMonth = document.getElementById("bmonth");
+        var eMonth = document.getElementById("emonth");
+        var male = document.getElementById("male");
+        var female = document.getElementById("female");
+        var other = document.getElementById("other");
+        var bday = document.getElementById("bday");
+        var sday = document.getElementById("sday");
+        var eday = document.getElementById("eday");
+
+
+        if (bMonth.value > eMonth.value && bMonth.value < 0) {
+            alert("Số đầu kỳ phải nhỏ hơn hoặc bằng số cuối kỳ, số đầu kỳ phải lớn hơn 0, ngày đầu kỳ nhỏ hơn hoặc bằng ngày cuối kỳ");
+            return false;
+        }
+        return true;
+    }
+
+    var batDau = document.electic_bill.dauKy.value;
+    var ketThuc = document.electic_bill.cuoiKy.value;
+
+    var tienDien;
+    var bac1 = 1000, bac2 = 2000, bac3 = 3500;
+    var soDien = ketThuc - batDau;
+    if (soDien <= 50) {
+        tienDien = soDien * bac1;
+    } else if (soDien <= 100) {
+        tienDien = 50 * bac1 + ((soDien - 50) * bac2);
+    } else if (soDien >= 200) {
+        tienDien = 50 * bac1 + (50 * bac2) + ((soDien - 100) * bac3);
+    }
+    document.write(tienDien)
+</script>
+</body>
+</html>

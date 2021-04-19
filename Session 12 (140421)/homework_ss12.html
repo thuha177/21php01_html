@@ -102,9 +102,9 @@ document.write("<b>Đổi quê quán học viên quê quán ở Đà Nẵng thà
         document.write("<br>");
     }
 document.write("<b>Xoa hoc vien 23-26</b> <br>");
-    for(var g = 0; g < studentList.length; g++){
-        if (studentList[g].age ){
-            studentList[g] = null;
+    for(var g = 0; g < studentList.length  ; g++){
+        if (studentList[g].age >= 23 && studentList[g].age <= 26  ){
+            studentList.splice(g, 1);
         }
     }
 
