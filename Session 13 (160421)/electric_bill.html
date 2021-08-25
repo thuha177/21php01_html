@@ -38,6 +38,8 @@
 
     <br><br><br>
     <input class="submit" type="submit" value="Submit">
+
+
 </form>
 
 <!--Tạo form nhập tính tiền điện gồm:-->
@@ -52,7 +54,7 @@
 <!--2. Số đầu kỳ phải nhỏ hơn hoặc bằng số cuối kỳ, số đầu kỳ phải lớn hơn 0, ngày đầu kỳ nhỏ hơn hoặc bằng ngày cuối kỳ-->
 <!--3. Tính tiền điện: 50 số đầu giá 1000 VND/số, 100 số tiếp theo 2000 VND/số, từ 200 số trở lên sẽ tính giá 3500 VND/số-->
 <!--4. In ra cái hóa đơn đẹp đẹp cho khách hàng (Nếu khách hàng là nữ thì in hóa đơn màu hồng, là nam thì in ra màu xanh green)-->
-
+</body>
 <script>
     function validate() {
         var name = document.getElementById("name");
@@ -65,7 +67,12 @@
         var sday = document.getElementById("sday");
         var eday = document.getElementById("eday");
 
-
+        //     if (name.value != "" && bMonth.value != "" && eMonth.value != "" && male.value != "" && female.value != "" && other.value != ""&& bday.value != "" && sday.value != ""&& eday.value != "") {
+        //             return true;
+        //     }
+        //     alert("Data can't be blank");
+        //     return false;
+        // }
         if (bMonth.value > eMonth.value && bMonth.value < 0) {
             alert("Số đầu kỳ phải nhỏ hơn hoặc bằng số cuối kỳ, số đầu kỳ phải lớn hơn 0, ngày đầu kỳ nhỏ hơn hoặc bằng ngày cuối kỳ");
             return false;
@@ -86,7 +93,6 @@
     } else if (soDien >= 200) {
         tienDien = 50 * bac1 + (50 * bac2) + ((soDien - 100) * bac3);
     }
-    document.write(tienDien)
+    alert(tienDien)
 </script>
-</body>
 </html>
